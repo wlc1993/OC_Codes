@@ -17,4 +17,4 @@ int main(int argc, char const *argv[])
 	NSLog(@"%@", [MySingleton instance]);
 	NSLog(@"%@", [MySingleton instance]);
 	NSLog(@"%@", [[MySingleton alloc] init]);
-}
+} 
