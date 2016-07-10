@@ -11,7 +11,8 @@
 		1F4B51921D2E8A7B00304E0F /* tiantiansifangmao-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F4B51911D2E8A7B00304E0F /* tiantiansifangmao-04.png */; };
 		1F4B51941D2E940700304E0F /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F4B51931D2E940700304E0F /* 9.jpg */; };
 		1F4B519A1D2E9E2100304E0F /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4B51991D2E9E2100304E0F /* LoginController.m */; };
-		1F69C8B01D327D6F00D0B0C1 /* TextViewWithNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F69C8AF1D327D6F00D0B0C1 /* TextViewWithNavigationBar.m */; };
+		1F69C8B31D32900600D0B0C1 /* ImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F69C8B21D32900600D0B0C1 /* ImageController.m */; };
+		1F69C8B61D32903400D0B0C1 /* TextViewWithNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F69C8B51D32903400D0B0C1 /* TextViewWithNavigationBar.m */; };
 		1FAF36201D295A0300E9F848 /* joker.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1FAF361F1D295A0300E9F848 /* joker.jpg */; };
 		1FAF36221D295BEE00E9F848 /* tiantiansifangmao-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FAF36211D295BEE00E9F848 /* tiantiansifangmao-03.png */; };
 		1FAF36251D295C6700E9F848 /* tiantiansifangmao-10.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FAF36231D295C6700E9F848 /* tiantiansifangmao-10.png */; };
@@ -44,8 +45,10 @@
 		1F4B51931D2E940700304E0F /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
 		1F4B51981D2E9E2100304E0F /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
 		1F4B51991D2E9E2100304E0F /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
-		1F69C8AE1D327D6F00D0B0C1 /* TextViewWithNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextViewWithNavigationBar.h; path = ../TextViewWithNavigationBar.h; sourceTree = "<group>"; };
-		1F69C8AF1D327D6F00D0B0C1 /* TextViewWithNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextViewWithNavigationBar.m; path = ../TextViewWithNavigationBar.m; sourceTree = "<group>"; };
+		1F69C8B11D32900600D0B0C1 /* ImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageController.h; sourceTree = "<group>"; };
+		1F69C8B21D32900600D0B0C1 /* ImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageController.m; sourceTree = "<group>"; };
+		1F69C8B41D32903400D0B0C1 /* TextViewWithNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewWithNavigationBar.h; sourceTree = "<group>"; };
+		1F69C8B51D32903400D0B0C1 /* TextViewWithNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewWithNavigationBar.m; sourceTree = "<group>"; };
 		1FAF361F1D295A0300E9F848 /* joker.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = joker.jpg; sourceTree = "<group>"; };
 		1FAF36211D295BEE00E9F848 /* tiantiansifangmao-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiantiansifangmao-03.png"; sourceTree = "<group>"; };
 		1FAF36231D295C6700E9F848 /* tiantiansifangmao-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiantiansifangmao-10.png"; sourceTree = "<group>"; };
@@ -106,8 +109,12 @@
 		1FE076521D218143004BEDA3 /* fengkuangIOS1 */ = {
 			isa = PBXGroup;
 			children = (
-				1F69C8AE1D327D6F00D0B0C1 /* TextViewWithNavigationBar.h */,
-				1F69C8AF1D327D6F00D0B0C1 /* TextViewWithNavigationBar.m */,
+				1F69C8B41D32903400D0B0C1 /* TextViewWithNavigationBar.h */,
+				1F69C8B51D32903400D0B0C1 /* TextViewWithNavigationBar.m */,
+				1F69C8B11D32900600D0B0C1 /* ImageController.h */,
+				1F69C8B21D32900600D0B0C1 /* ImageController.m */,
+				1F4B51981D2E9E2100304E0F /* LoginController.h */,
+				1F4B51991D2E9E2100304E0F /* LoginController.m */,
 				1FE076571D218143004BEDA3 /* AppDelegate.h */,
 				1FE076581D218143004BEDA3 /* AppDelegate.m */,
 				1FE0765D1D218143004BEDA3 /* ViewController.h */,
@@ -120,8 +127,6 @@
 				1FE076651D218143004BEDA3 /* LaunchScreen.xib */,
 				1FE0765A1D218143004BEDA3 /* fengkuangIOS1.xcdatamodeld */,
 				1FE076531D218143004BEDA3 /* Supporting Files */,
-				1F4B51981D2E9E2100304E0F /* LoginController.h */,
-				1F4B51991D2E9E2100304E0F /* LoginController.m */,
 			);
 			path = fengkuangIOS1;
 			sourceTree = "<group>";
@@ -267,11 +272,12 @@
 			files = (
 				1F4B51901D2E845F00304E0F /* CustomCircle.m in Sources */,
 				1FE076591D218143004BEDA3 /* AppDelegate.m in Sources */,
-				1F69C8B01D327D6F00D0B0C1 /* TextViewWithNavigationBar.m in Sources */,
+				1F69C8B31D32900600D0B0C1 /* ImageController.m in Sources */,
 				1FE0765C1D218143004BEDA3 /* fengkuangIOS1.xcdatamodeld in Sources */,
 				1FE0765F1D218143004BEDA3 /* ViewController.m in Sources */,
 				1FE076561D218143004BEDA3 /* main.m in Sources */,
 				1F4B519A1D2E9E2100304E0F /* LoginController.m in Sources */,
+				1F69C8B61D32903400D0B0C1 /* TextViewWithNavigationBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

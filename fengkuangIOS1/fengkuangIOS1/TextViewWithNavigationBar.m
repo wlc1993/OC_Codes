@@ -41,7 +41,14 @@
     
     NSLog(@"%f", self.view.bounds.size.width);
     NSLog(@"%f", [UIScreen mainScreen].bounds.size.width);
+    NSLog(@"%f", self.view.bounds.size.height);
+    NSLog(@"%f", [UIScreen mainScreen].bounds.size.height);
     
+    
+    // create uiviewimage
+    UIImage* image = [UIImage imageNamed:@"zen-icons-pen.png"];
+    UIImageView* imageView = [[UIImageView alloc] initWithImage: image];
+    [self.view addSubview:imageView];
 }
 
 - (void)editDone: (id)sender {
