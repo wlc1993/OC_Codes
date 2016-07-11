@@ -29,7 +29,29 @@ UIImageView* imageView1;
 }
 
 - (void)testAlert {
-    
+    [self createButtonWithTitle:@"showAlert" positionX:100 positionY:200 action:@selector(showAlert:)];
+
+}
+
+- (void)showAlert: (id)sender {
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"title" message:@"message" preferredStyle:UIAlertControllerStyleAlert];
+    [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDestructive handler:^(UIAlertAction *action) {
+        NSLog(@"%@", action);
+    }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
+        NSLog(@"%@ %@", ((UITextField*)(alert.textFields[0])).text, ((UITextField*)(alert.textFields[1])).text);
+    }]];
+//    [alert addAction:[UIAlertAction actionWithTitle:@"action3" style:UIAlertActionStyleDestructive handler:nil]];
+//    [alert addAction:[UIAlertAction actionWithTitle:@"action4" style:UIAlertActionStyleCancel handler:nil]];
+    [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        textField.placeholder = @"username";
+    }];
+    [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        textField.placeholder = @"password";
+        textField.keyboardType = UIKeyboardTypeNumberPad;
+        textField.secureTextEntry = YES;
+    }];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 - (UIImageView*)createTapImage: (NSString*)name forAction: (SEL)action positionX:(int)x positionY:(int)y {
