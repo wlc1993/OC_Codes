@@ -16,15 +16,16 @@ UIImageView* imageView;
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    [self createImageView];
-    [self createImageView2];
+//    [self createImageView2];
 }
 - (void)createImageView2 {
+//    有了@就不需要初始化创建数组了
     images = @[[UIImage imageNamed:@"9.jpg"], [UIImage imageNamed:@"tiantiansifangmao-03.png"], [UIImage imageNamed:@"tiantiansifangmao-10.png"],
                [UIImage imageNamed:@"9.jpg"], [UIImage imageNamed:@"tiantiansifangmao-03.png"], [UIImage imageNamed:@"tiantiansifangmao-10.png"]];
     UIImageView* iView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 150, 300, 300)];
     iView.image = images[1];
     [self.view addSubview:iView];
-    
+//    自动播放
     iView.animationImages = images;
     iView.animationDuration = 3;
     iView.animationRepeatCount = 111;
