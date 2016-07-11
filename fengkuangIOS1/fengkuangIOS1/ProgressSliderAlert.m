@@ -13,13 +13,63 @@
 UIProgressView* gProgress;
 NSTimer* timer;
 UIActivityIndicatorView* indicator;
+UISlider* slider;
+UILabel* label;
+UIImageView* imageView1;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    label = [[UILabel alloc] initWithFrame:CGRectMake(self.view.bounds.size.width/2, 50, 200, 50)];
+    label.text = @"this is title";
+    [self.view addSubview:label];
 //    [self testProgress];
-    [self testIndicator];
+//    [self testIndicator];
+//    [self testSlider];
+    [self testAlert];
+}
 
+- (void)testAlert {
     
 }
+
+- (UIImageView*)createTapImage: (NSString*)name forAction: (SEL)action positionX:(int)x positionY:(int)y {
+    UIImage* image = [UIImage imageNamed:name];
+    UIImageView* imageView = [[UIImageView alloc] initWithImage:image];
+    if(action){
+        UITapGestureRecognizer* recongnizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:action];
+        [imageView addGestureRecognizer:recongnizer];
+    }
+    imageView.frame = CGRectMake(x, y, image.size.width, image.size.height);
+    [self.view addSubview:imageView];
+    return imageView;
+}
+
+- (void)testSlider {
+    slider = [[UISlider alloc]initWithFrame:CGRectMake(100, 100, 200, 50)];
+    slider.maximumValue = 100;
+    slider.value = 55;
+
+    slider.minimumValueImage = [UIImage imageNamed:@"arrow3.png"];
+    slider.maximumValueImage = [UIImage imageNamed:@"arrow3.png"];
+
+    [slider addTarget:self action:@selector(slideChange:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:slider];
+//    设置可拉伸图片
+    UIImage* resizeImage = [[UIImage imageNamed:@"progress.gif"] resizableImageWithCapInsets:UIEdgeInsetsZero resizingMode:UIImageResizingModeTile];
+    [slider setMinimumTrackImage:resizeImage forState:UIControlStateNormal];
+    slider.transform = CGAffineTransformMakeScale(1, 3);
+    
+//    控制图片的透明度
+    imageView1 = [self createTapImage:@"arrow1.png" forAction:@selector(slideChange:) positionX:100 positionY:400];
+}
+
+- (void)slideChange: (id)sender {
+    label.text = [NSString stringWithFormat:@"%f",slider.value];
+    imageView1.alpha = slider.value/100;
+}
+
+
+
 - (UIButton*)createButtonWithTitle: (NSString*)title positionX: (int)x  positionY: (int)y action: (SEL)sel {
     UIButton* button = [UIButton buttonWithType:UIButtonTypeSystem];
     button.frame = CGRectMake(x, y, 100, 50);

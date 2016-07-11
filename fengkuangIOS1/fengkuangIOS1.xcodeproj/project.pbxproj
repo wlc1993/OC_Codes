@@ -13,6 +13,9 @@
 		1F4B519A1D2E9E2100304E0F /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4B51991D2E9E2100304E0F /* LoginController.m */; };
 		1F531FB21D33CEE80034E04D /* ProgressSliderAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F531FB11D33CEE80034E04D /* ProgressSliderAlert.m */; };
 		1F531FB41D33D8980034E04D /* progress.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F531FB31D33D8980034E04D /* progress.gif */; };
+		1F531FB71D33E6610034E04D /* arrow1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F531FB51D33E6610034E04D /* arrow1.png */; };
+		1F531FB81D33E6610034E04D /* arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F531FB61D33E6610034E04D /* arrow2.png */; };
+		1F531FBA1D33E7300034E04D /* arrow3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F531FB91D33E7300034E04D /* arrow3.png */; };
 		1F69C8B31D32900600D0B0C1 /* ImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F69C8B21D32900600D0B0C1 /* ImageController.m */; };
 		1F69C8B61D32903400D0B0C1 /* TextViewWithNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F69C8B51D32903400D0B0C1 /* TextViewWithNavigationBar.m */; };
 		1FAF36201D295A0300E9F848 /* joker.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1FAF361F1D295A0300E9F848 /* joker.jpg */; };
@@ -50,6 +53,9 @@
 		1F531FB01D33CEE80034E04D /* ProgressSliderAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressSliderAlert.h; sourceTree = "<group>"; };
 		1F531FB11D33CEE80034E04D /* ProgressSliderAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressSliderAlert.m; sourceTree = "<group>"; };
 		1F531FB31D33D8980034E04D /* progress.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = progress.gif; sourceTree = "<group>"; };
+		1F531FB51D33E6610034E04D /* arrow1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow1.png; sourceTree = "<group>"; };
+		1F531FB61D33E6610034E04D /* arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow2.png; sourceTree = "<group>"; };
+		1F531FB91D33E7300034E04D /* arrow3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow3.png; sourceTree = "<group>"; };
 		1F69C8B11D32900600D0B0C1 /* ImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageController.h; sourceTree = "<group>"; };
 		1F69C8B21D32900600D0B0C1 /* ImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageController.m; sourceTree = "<group>"; };
 		1F69C8B41D32903400D0B0C1 /* TextViewWithNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewWithNavigationBar.h; sourceTree = "<group>"; };
@@ -141,6 +147,9 @@
 		1FE076531D218143004BEDA3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1F531FB51D33E6610034E04D /* arrow1.png */,
+				1F531FB61D33E6610034E04D /* arrow2.png */,
+				1F531FB91D33E7300034E04D /* arrow3.png */,
 				1F531FB31D33D8980034E04D /* progress.gif */,
 				1F4B51931D2E940700304E0F /* 9.jpg */,
 				1FAF36271D295D5A00E9F848 /* zen-icons-pen.png */,
@@ -256,11 +265,14 @@
 				1FAF36221D295BEE00E9F848 /* tiantiansifangmao-03.png in Resources */,
 				1FAF36281D295D5A00E9F848 /* zen-icons-pen.png in Resources */,
 				1F4B51941D2E940700304E0F /* 9.jpg in Resources */,
+				1F531FB71D33E6610034E04D /* arrow1.png in Resources */,
 				1FE076671D218143004BEDA3 /* LaunchScreen.xib in Resources */,
 				1F4B51921D2E8A7B00304E0F /* tiantiansifangmao-04.png in Resources */,
 				1FE076641D218143004BEDA3 /* Images.xcassets in Resources */,
 				1FAF36251D295C6700E9F848 /* tiantiansifangmao-10.png in Resources */,
 				1FAF36261D295C6700E9F848 /* tiantiansifangmao-11.png in Resources */,
+				1F531FBA1D33E7300034E04D /* arrow3.png in Resources */,
+				1F531FB81D33E6610034E04D /* arrow2.png in Resources */,
 				1FAF36201D295A0300E9F848 /* joker.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
