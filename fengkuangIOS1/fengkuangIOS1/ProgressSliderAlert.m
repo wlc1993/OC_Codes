@@ -31,8 +31,11 @@ UIDatePicker* datePicker;
 //    [self testSlider];
 //    [self testAlert];
 //    [self testDatePicker];
-    [self testToolBar];
+//    [self testToolBar];
+
 }
+
+
 - (IBAction)t1:(id)sender {
     NSLog(@"test1");
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"toolbar" message:@"toobar2" preferredStyle:UIAlertControllerStyleAlert];

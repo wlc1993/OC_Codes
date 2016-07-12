@@ -17,6 +17,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.book = [[NSMutableArray alloc] init];
+    self.content = [[NSMutableArray alloc] init];
+    for (int i = 0; i < 33; i ++) {
+        self.book[i] = [NSString stringWithFormat:@"Book %d",i];
+        self.content[i] = [NSString stringWithFormat:@"Book %d contenthere\ntestdas",i];
+    }
+    
     return YES;
 }
 

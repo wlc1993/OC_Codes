@@ -23,6 +23,8 @@
 		1FAF36251D295C6700E9F848 /* tiantiansifangmao-10.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FAF36231D295C6700E9F848 /* tiantiansifangmao-10.png */; };
 		1FAF36261D295C6700E9F848 /* tiantiansifangmao-11.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FAF36241D295C6700E9F848 /* tiantiansifangmao-11.png */; };
 		1FAF36281D295D5A00E9F848 /* zen-icons-pen.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FAF36271D295D5A00E9F848 /* zen-icons-pen.png */; };
+		1FBE0E2B1D35179E00800E6D /* SimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBE0E2A1D35179E00800E6D /* SimpleTableViewController.m */; };
+		1FBE0E2E1D352D1D00800E6D /* SimpleTableDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBE0E2D1D352D1D00800E6D /* SimpleTableDetailViewController.m */; };
 		1FE076561D218143004BEDA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE076551D218143004BEDA3 /* main.m */; };
 		1FE076591D218143004BEDA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE076581D218143004BEDA3 /* AppDelegate.m */; };
 		1FE0765C1D218143004BEDA3 /* fengkuangIOS1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1FE0765A1D218143004BEDA3 /* fengkuangIOS1.xcdatamodeld */; };
@@ -65,6 +67,10 @@
 		1FAF36231D295C6700E9F848 /* tiantiansifangmao-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiantiansifangmao-10.png"; sourceTree = "<group>"; };
 		1FAF36241D295C6700E9F848 /* tiantiansifangmao-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiantiansifangmao-11.png"; sourceTree = "<group>"; };
 		1FAF36271D295D5A00E9F848 /* zen-icons-pen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zen-icons-pen.png"; sourceTree = "<group>"; };
+		1FBE0E291D35179E00800E6D /* SimpleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableViewController.h; sourceTree = "<group>"; };
+		1FBE0E2A1D35179E00800E6D /* SimpleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableViewController.m; sourceTree = "<group>"; };
+		1FBE0E2C1D352D1D00800E6D /* SimpleTableDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableDetailViewController.h; sourceTree = "<group>"; };
+		1FBE0E2D1D352D1D00800E6D /* SimpleTableDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableDetailViewController.m; sourceTree = "<group>"; };
 		1FE076501D218143004BEDA3 /* fengkuangIOS1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fengkuangIOS1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE076541D218143004BEDA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FE076551D218143004BEDA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -120,6 +126,10 @@
 		1FE076521D218143004BEDA3 /* fengkuangIOS1 */ = {
 			isa = PBXGroup;
 			children = (
+				1FBE0E2C1D352D1D00800E6D /* SimpleTableDetailViewController.h */,
+				1FBE0E2D1D352D1D00800E6D /* SimpleTableDetailViewController.m */,
+				1FBE0E291D35179E00800E6D /* SimpleTableViewController.h */,
+				1FBE0E2A1D35179E00800E6D /* SimpleTableViewController.m */,
 				1F531FB01D33CEE80034E04D /* ProgressSliderAlert.h */,
 				1F531FB11D33CEE80034E04D /* ProgressSliderAlert.m */,
 				1F69C8B41D32903400D0B0C1 /* TextViewWithNavigationBar.h */,
@@ -294,10 +304,12 @@
 				1F4B51901D2E845F00304E0F /* CustomCircle.m in Sources */,
 				1FE076591D218143004BEDA3 /* AppDelegate.m in Sources */,
 				1F69C8B31D32900600D0B0C1 /* ImageController.m in Sources */,
+				1FBE0E2E1D352D1D00800E6D /* SimpleTableDetailViewController.m in Sources */,
 				1F531FB21D33CEE80034E04D /* ProgressSliderAlert.m in Sources */,
 				1FE0765C1D218143004BEDA3 /* fengkuangIOS1.xcdatamodeld in Sources */,
 				1FE0765F1D218143004BEDA3 /* ViewController.m in Sources */,
 				1FE076561D218143004BEDA3 /* main.m in Sources */,
+				1FBE0E2B1D35179E00800E6D /* SimpleTableViewController.m in Sources */,
 				1F4B519A1D2E9E2100304E0F /* LoginController.m in Sources */,
 				1F69C8B61D32903400D0B0C1 /* TextViewWithNavigationBar.m in Sources */,
 			);
