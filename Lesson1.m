@@ -35,7 +35,7 @@ int main(int argc, char const *argv[])
 	NSLog(@"today is %@", [NSDate date]);
 	NSLog(@"tomorrow date is %@", [NSDate dateWithTimeInterval: 3600 * 24 sinceDate: [NSDate date] ]);
 	NSLog(@"initWithTimeIntervalSinceNow date is %@", [[NSDate date] initWithTimeIntervalSinceNow: 3600 * 24 ]);
-	NSLog(@"SinceReferenceDate : %@", [NSDate dateWithTimeIntervalSinceReferenceDate: 3600 * 24 * 3650] );
+	NSLog(@"SinceReferenceDate : %@", [NSDate dateWithTimeIntervalSinceReferenceDate: 3600 * 24 ] );
 
 	@autoreleasepool{
 		char aChar = 'a';

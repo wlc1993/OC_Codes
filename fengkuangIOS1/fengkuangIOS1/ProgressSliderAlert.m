@@ -16,16 +16,58 @@ UIActivityIndicatorView* indicator;
 UISlider* slider;
 UILabel* label;
 UIImageView* imageView1;
+UIDatePicker* datePicker;
+#define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    label = [[UILabel alloc] initWithFrame:CGRectMake(self.view.bounds.size.width/2, 50, 200, 50)];
+    label = [[UILabel alloc] initWithFrame:CGRectMake(self.view.bounds.size.width/2, 44, 200, 50)];
     label.text = @"this is title";
     [self.view addSubview:label];
+    
 //    [self testProgress];
 //    [self testIndicator];
 //    [self testSlider];
-    [self testAlert];
+//    [self testAlert];
+//    [self testDatePicker];
+    [self testToolBar];
+}
+- (IBAction)t1:(id)sender {
+    NSLog(@"test1");
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"toolbar" message:@"toobar2" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* action1 = [UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleDefault handler:nil  ];
+    [alert addAction:action1];
+    [self presentViewController:alert animated:YES completion:^{
+//        alert弹出完成后执行
+        NSLog(@"done");
+    }];
+}
+
+- (IBAction)t2:(id)sender {
+    NSLog(@"test2");
+}
+
+- (void)testToolBar {
+    UIToolbar* toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 200, SCREENWIDTH, 44)];
+    UIBarButtonItem* item1 = [[UIBarButtonItem alloc] initWithTitle:@"first" style:UIBarButtonItemStylePlain target:self action:@selector(t1:)];
+    UIBarButtonItem* item2 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    UIBarButtonItem* item3 = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"arrow3.png"] style:UIBarButtonItemStylePlain target:self action:@selector(t2:)];
+    item2.width = 200;
+    toolbar.items = @[item1, item2, item3];
+    [self.view addSubview:toolbar];
+}
+
+- (void)testDatePicker {
+    datePicker = [[UIDatePicker alloc] initWithFrame:CGRectMake(20, 100, 200, 200)];
+    datePicker.minimumDate = [NSDate date];
+    datePicker.maximumDate = [NSDate dateWithTimeIntervalSinceNow:3600 * 24 * 7];
+    [datePicker addTarget:self action:@selector(dateChange:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:datePicker];
+}
+
+- (void)dateChange: (id)sender {
+    
 }
 
 - (void)testAlert {
